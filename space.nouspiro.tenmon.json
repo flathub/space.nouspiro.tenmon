@@ -15,7 +15,7 @@
 		"--share=ipc",
 		"--socket=x11",
 		"--device=dri",
-		"--filesystem=host:ro",
+		"--filesystem=host:rw",
 		"--filesystem=xdg-run/gvfs:ro"
 	],
 	"modules": [
@@ -133,8 +133,8 @@
 				{
 					"type": "git",
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20221126",
-					"commit": "6411b7cd15022a3ee7ffe66587489931ea0e4cea"
+					"tag": "20221209",
+					"commit": "a1e98d818b8b2e4720df2c41bf3e3d1b34c1625e"
 				}
 			]
 		}
