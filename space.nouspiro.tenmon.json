@@ -133,8 +133,8 @@
 				{
 					"type": "git",
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20221210",
-					"commit": "0368c1f1dc14444ed0835509dff39289b2a1618d"
+					"tag": "20221215",
+					"commit": "71fc1f2bd1efaacf0bb5542d7c1d8df21c7abcd5"
 				}
 			]
 		}
