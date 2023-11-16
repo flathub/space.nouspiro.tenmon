@@ -20,46 +20,6 @@
 	],
 	"modules": [
 		{
-			"name": "opencv",
-			"buildsystem": "cmake-ninja",
-			"cleanup": [
-				"/bin"
-			],
-			"config-opts": [
-				"-DCMAKE_BUILD_TYPE=Release",
-				"-DBUILD_opencv_apps=OFF",
-				"-DBUILD_opencv_calib3d=OFF",
-				"-DBUILD_opencv_dnn=OFF",
-				"-DBUILD_opencv_features2d=OFF",
-				"-DBUILD_opencv_flann=OFF",
-				"-DBUILD_opencv_gapi=OFF",
-				"-DBUILD_opencv_highgui=OFF",
-				"-DBUILD_opencv_imgcodecs=OFF",
-				"-DBUILD_opencv_java_bindings_generator=OFF",
-				"-DBUILD_opencv_js:BOOL=OFF",
-				"-DBUILD_opencv_js_bindings_generator=OFF",
-				"-DBUILD_opencv_ml=OFF",
-				"-DBUILD_opencv_objc_bindings_generator=OFF",
-				"-DBUILD_opencv_objdetect=OFF",
-				"-DBUILD_opencv_photo=OFF",
-				"-DBUILD_opencv_python_bindings_generator=OFF",
-				"-DBUILD_opencv_python_tests=OFF",
-				"-DBUILD_opencv_stitching=OFF",
-				"-DBUILD_opencv_ts=OFF",
-				"-DBUILD_opencv_video=OFF",
-				"-DBUILD_opencv_videoio=OFF",
-				"-DBUILD_opencv_world:BOOL=OFF"
-			],
-			"builddir": true,
-			"sources": [
-				{
-					"type": "archive",
-					"url":"https://github.com/opencv/opencv/archive/4.5.5.zip",
-					"sha256":"fb16b734db3a28e5119d513bd7c61ef417edf3756165dc6259519bb9d23d04e2"
-				}
-			]
-		},
-		{
 			"name": "libgsl",
 			"buildsystem": "autotools",
 			"cleanup": ["/bin"],
@@ -133,8 +93,8 @@
 				{
 					"type": "git",
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20230419",
-					"commit": "77c312800a363e6884dfcd904de486136d22165f"
+					"tag": "20231116",
+					"commit": "50c070b16942886a3201d049069bab198583a65b"
 				}
 			]
 		}
