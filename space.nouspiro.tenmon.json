@@ -1,7 +1,7 @@
 {
 	"id": "space.nouspiro.tenmon",
 	"runtime": "org.kde.Platform",
-	"runtime-version": "6.6",
+	"runtime-version": "6.7",
 	"sdk": "org.kde.Sdk",
 	"command": "tenmon",
 	"cleanup": [
@@ -13,10 +13,12 @@
 	"finish-args":
 	[
 		"--share=ipc",
-		"--socket=x11",
+		"--socket=fallback-x11",
+		"--socket=wayland",
 		"--device=dri",
 		"--filesystem=host:rw",
-		"--filesystem=xdg-run/gvfs:ro"
+		"--filesystem=xdg-run/gvfs:ro",
+		"--talk-name=org.freedesktop.FileManager1"
 	],
 	"modules": [
 		{
@@ -93,8 +95,8 @@
 				{
 					"type": "git",
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20240201",
-					"commit": "4e952873e307503db08eb7973c75ce7692258bd3"
+					"tag": "20240610",
+					"commit": "92345f82ca426e5f8bdd6349e390ebdef3d259a8"
 				}
 			]
 		}
