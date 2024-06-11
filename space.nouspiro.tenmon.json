@@ -47,8 +47,9 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.3.0.tar.gz",
-					"sha256": "fdadc01d09cf9f54253802c5ec87eb10de51ce4130411415ae88c30940621b8b"
+					"disable-http-decompression": true,
+					"url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.4.0.tar.gz",
+					"sha256": "95900cf95ae760839e7cb9678a7b2fad0858d6ac12234f934bd1cb6bfc246ba9"
 				}
 			]
 		},
@@ -79,8 +80,8 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-7.12.tar.bz2",
-					"sha256": "9cf8de50e109a97fa04511d4111e8d14bd0a44077132acf73e6cf0029fe96bd4"
+					"url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-8.2.2.tar.bz2",
+					"sha256": "6298220ae817f4e5522643ac4c3da2623be70a3484b1a4f37060bee3e4bd7833"
 				}
 			]
 		},
