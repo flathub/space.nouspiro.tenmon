@@ -90,13 +90,14 @@
 			"buildsystem": "cmake-ninja",
 			"config-opts": [
 				"-DCMAKE_BUILD_TYPE=Release",
-				"-DRELEASE_BUILD=ON"
+				"-DRELEASE_BUILD=ON",
+				"-DFLATPAK=ON"
 			],
 			"sources": [
 				{
 					"type": "git",
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"commit": "0239aba1655ab2dcd0330d9f91290859f03a8190"
+					"commit": "5e18c591f76be1a0ea7b8ef6d3d448f9c65e42b6"
 				}
 			]
 		}
