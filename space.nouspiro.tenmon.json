@@ -13,6 +13,7 @@
 	"finish-args":
 	[
 		"--share=ipc",
+		"--share=network",
 		"--socket=fallback-x11",
 		"--socket=wayland",
 		"--device=dri",
@@ -86,18 +87,36 @@
 			]
 		},
 		{
+			"name": "stellarsolver",
+			"buildsystem": "cmake-ninja",
+			"config-opts": [
+				"-DCMAKE_BUILD_TYPE=Release",
+				"-DUSE_QT5=OFF"
+			],
+			"sources": [
+				{
+					"type": "git",
+					"url": "https://github.com/rlancaste/stellarsolver.git",
+					"commit": "0e4db32caa2d98a9a4ff2a2df765c45e9539ba93"
+				}
+			]
+		},
+		{
 			"name": "tenmon",
 			"buildsystem": "cmake-ninja",
 			"config-opts": [
 				"-DCMAKE_BUILD_TYPE=Release",
-				"-DRELEASE_BUILD=ON"
+				"-DRELEASE_BUILD=ON",
+				"-DFLATPAK=ON",
+				"-DUSE_BUNDLED_LIBS=ON",
+				"-DUSE_BUNDLED_ZLIB=OFF"
 			],
 			"sources": [
 				{
 					"type": "git",
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20240816",
-					"commit": "d288810d5dd39119700b110d45d150e81d7f6b9b"
+					"tag": "20241002",
+					"commit": "6c42315f87aee5288bfd86a5c87b914a10f937af"
 				}
 			]
 		}
