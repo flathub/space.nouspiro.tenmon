@@ -1,7 +1,7 @@
 {
 	"id": "space.nouspiro.tenmon",
 	"runtime": "org.kde.Platform",
-	"runtime-version": "6.7",
+	"runtime-version": "6.8",
 	"sdk": "org.kde.Sdk",
 	"command": "tenmon",
 	"cleanup": [
@@ -115,8 +115,8 @@
 				{
 					"type": "git",
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20241002",
-					"commit": "6c42315f87aee5288bfd86a5c87b914a10f937af"
+					"tag": "20241116",
+					"commit": "4afa94088660647f6ffebe49511f197c378fcf0c"
 				}
 			]
 		}
