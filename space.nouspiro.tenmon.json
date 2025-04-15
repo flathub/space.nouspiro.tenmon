@@ -1,7 +1,7 @@
 {
 	"id": "space.nouspiro.tenmon",
 	"runtime": "org.kde.Platform",
-	"runtime-version": "6.7",
+	"runtime-version": "6.9",
 	"sdk": "org.kde.Sdk",
 	"command": "tenmon",
 	"cleanup": [
@@ -93,6 +93,7 @@
 				"-DCMAKE_BUILD_TYPE=Release",
 				"-DUSE_QT5=OFF"
 			],
+			"only-arches": ["x86_64"],
 			"sources": [
 				{
 					"type": "git",
