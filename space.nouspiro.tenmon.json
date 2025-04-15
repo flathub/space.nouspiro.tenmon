@@ -93,6 +93,7 @@
 				"-DCMAKE_BUILD_TYPE=Release",
 				"-DUSE_QT5=OFF"
 			],
+			"only-arches": ["x86_64"],
 			"sources": [
 				{
 					"type": "git",
