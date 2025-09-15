@@ -1,7 +1,7 @@
 {
 	"id": "space.nouspiro.tenmon",
 	"runtime": "org.kde.Platform",
-	"runtime-version": "6.7",
+	"runtime-version": "6.9",
 	"sdk": "org.kde.Sdk",
 	"command": "tenmon",
 	"cleanup": [
@@ -29,8 +29,13 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://quantum-mirror.hu/mirrors/pub/gnu/gsl/gsl-2.7.1.tar.gz",
-					"sha256": "dcb0fbd43048832b757ff9942691a8dd70026d5da0ff85601e52687f6deeb34b"
+					"url": "https://quantum-mirror.hu/mirrors/pub/gnu/gsl/gsl-2.8.tar.gz",
+					"sha256": "6a99eeed15632c6354895b1dd542ed5a855c0f15d9ad1326c6fe2b2c9e423190",
+					"x-checker-data": {
+						"type": "anitya",
+						"project-id": 1267,
+						"url-template": "https://quantum-mirror.hu/mirrors/pub/gnu/gsl/gsl-$version.tar.gz"
+					}
 				}
 			]
 		},
@@ -49,8 +54,13 @@
 				{
 					"type": "archive",
 					"disable-http-decompression": true,
-					"url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.4.0.tar.gz",
-					"sha256": "95900cf95ae760839e7cb9678a7b2fad0858d6ac12234f934bd1cb6bfc246ba9"
+					"url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.2.tar.gz",
+					"sha256": "66fd078cc0bea896b0d44b120d46d6805421a5361d3a5ad84d9f397b1b5de2cb",
+					"x-checker-data": {
+						"type": "anitya",
+						"project-id": 270,
+						"url-template": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-$version.tar.gz"
+					}
 				}
 			]
 		},
@@ -63,8 +73,13 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://www.libraw.org/data/LibRaw-0.21.1.tar.gz",
-					"sha256": "630a6bcf5e65d1b1b40cdb8608bdb922316759bfb981c65091fec8682d1543cd"
+					"url": "https://www.libraw.org/data/LibRaw-0.21.4.tar.gz",
+					"sha256": "6be43f19397e43214ff56aab056bf3ff4925ca14012ce5a1538a172406a09e63",
+					"x-checker-data": {
+						"type": "anitya",
+						"project-id": 1709,
+						"url-template": "https://www.libraw.org/data/LibRaw-$version.tar.gz"
+					}
 				},
 				{
 					"type": "shell",
@@ -81,8 +96,13 @@
 			"sources": [
 				{
 					"type": "archive",
-					"url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-8.2.2.tar.bz2",
-					"sha256": "6298220ae817f4e5522643ac4c3da2623be70a3484b1a4f37060bee3e4bd7833"
+					"url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-8.4.tar.bz2",
+					"sha256": "960b844426d14a8b53cdeed78258aa9288cded99a7732c0667c64fa6a50126dc",
+					"x-checker-data": {
+						"type": "anitya",
+						"project-id": 7693,
+						"url-template": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-$version.tar.bz2"
+					}
 				}
 			]
 		},
@@ -97,7 +117,12 @@
 				{
 					"type": "git",
 					"url": "https://github.com/rlancaste/stellarsolver.git",
-					"commit": "0e4db32caa2d98a9a4ff2a2df765c45e9539ba93"
+					"tag": "2.7",
+					"commit": "5902126c7a0ac01877c29f1189bda23f0837cf58",
+					"x-checker-data": {
+						"type": "git",
+						"tag-pattern": "^([\\d.]+)$"
+					}
 				}
 			]
 		},
@@ -115,8 +140,12 @@
 				{
 					"type": "git", 
 					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20250429",
-					"commit": "c6bc792ff79adec2ab8fa91aabc8202afdd5ba42"
+					"tag": "20250915",
+					"commit": "1070dc32c1d555c3caba5f044c717a53207d08c4",
+					"x-checker-data": {
+						"type": "git",
+						"tag-pattern": "^([\\d]+)$"
+					}
 				}
 			]
 		}
