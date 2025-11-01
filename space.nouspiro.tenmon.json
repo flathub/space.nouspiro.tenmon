@@ -48,7 +48,8 @@
 			],
 			"config-opts": [
 				"-DCMAKE_BUILD_TYPE=Release",
-				"-DUSE_PTHREADS=ON"
+				"-DUSE_PTHREADS=ON",
+				"-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
 			],
 			"sources": [
 				{
