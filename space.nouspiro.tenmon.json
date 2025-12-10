@@ -1,153 +1,156 @@
 {
-	"id": "space.nouspiro.tenmon",
-	"runtime": "org.kde.Platform",
-	"runtime-version": "6.9",
-	"sdk": "org.kde.Sdk",
-	"command": "tenmon",
-	"cleanup": [
-		"/include",
-		"*.a",
-		"*.la",
-		"*.cmake"
-	],
-	"finish-args":
-	[
-		"--share=ipc",
-		"--share=network",
-		"--socket=fallback-x11",
-		"--socket=wayland",
-		"--device=dri",
-		"--filesystem=host:rw",
-		"--filesystem=xdg-run/gvfs:ro",
-		"--talk-name=org.freedesktop.FileManager1"
-	],
-	"modules": [
-		{
-			"name": "libgsl",
-			"buildsystem": "autotools",
-			"cleanup": ["/bin"],
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://quantum-mirror.hu/mirrors/pub/gnu/gsl/gsl-2.8.tar.gz",
-					"sha256": "6a99eeed15632c6354895b1dd542ed5a855c0f15d9ad1326c6fe2b2c9e423190",
-					"x-checker-data": {
-						"type": "anitya",
-						"project-id": 1267,
-						"url-template": "https://quantum-mirror.hu/mirrors/pub/gnu/gsl/gsl-$version.tar.gz"
-					}
-				}
-			]
-		},
-		{
-			"name": "cfitsio",
-			"buildsystem": "cmake-ninja",
-			"builddir": true,
-			"cleanup": [
-				"/bin"
-			],
-			"config-opts": [
-				"-DCMAKE_BUILD_TYPE=Release",
-				"-DUSE_PTHREADS=ON"
-			],
-			"sources": [
-				{
-					"type": "archive",
-					"disable-http-decompression": true,
-					"url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.2.tar.gz",
-					"sha256": "66fd078cc0bea896b0d44b120d46d6805421a5361d3a5ad84d9f397b1b5de2cb",
-					"x-checker-data": {
-						"type": "anitya",
-						"project-id": 270,
-						"url-template": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-$version.tar.gz"
-					}
-				}
-			]
-		},
-		{
-			"name": "libraw",
-			"buildsystem": "autotools",
-			"cleanup": [
-				"/bin"
-			],
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://www.libraw.org/data/LibRaw-0.21.4.tar.gz",
-					"sha256": "6be43f19397e43214ff56aab056bf3ff4925ca14012ce5a1538a172406a09e63",
-					"x-checker-data": {
-						"type": "anitya",
-						"project-id": 1709,
-						"url-template": "https://www.libraw.org/data/LibRaw-$version.tar.gz"
-					}
-				},
-				{
-					"type": "shell",
-					"commands": ["autoreconf -f -i"]
-				}
-			]
-		},
-		{
-			"name": "wcs",
-			"buildsystem": "autotools",
-			"cleanup": [
-				"/bin"
-			],
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-8.4.tar.bz2",
-					"sha256": "960b844426d14a8b53cdeed78258aa9288cded99a7732c0667c64fa6a50126dc",
-					"x-checker-data": {
-						"type": "anitya",
-						"project-id": 7693,
-						"url-template": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-$version.tar.bz2"
-					}
-				}
-			]
-		},
-		{
-			"name": "stellarsolver",
-			"buildsystem": "cmake-ninja",
-			"config-opts": [
-				"-DCMAKE_BUILD_TYPE=Release",
-				"-DUSE_QT5=OFF"
-			],
-			"sources": [
-				{
-					"type": "git",
-					"url": "https://github.com/rlancaste/stellarsolver.git",
-					"tag": "2.7",
-					"commit": "5902126c7a0ac01877c29f1189bda23f0837cf58",
-					"x-checker-data": {
-						"type": "git",
-						"tag-pattern": "^([\\d.]+)$"
-					}
-				}
-			]
-		},
-		{
-			"name": "tenmon",
-			"buildsystem": "cmake-ninja",
-			"config-opts": [
-				"-DCMAKE_BUILD_TYPE=Release",
-				"-DRELEASE_BUILD=ON",
-				"-DFLATPAK=ON",
-				"-DUSE_BUNDLED_LIBS=ON",
-				"-DUSE_BUNDLED_ZLIB=OFF"
-			],
-			"sources": [
-				{
-					"type": "git", 
-					"url": "https://gitea.nouspiro.space/nou/tenmon.git",
-					"tag": "20251101",
-					"commit": "9e7913346423f838e75e6b6d9e0e8a5eb9f65c5b",
-					"x-checker-data": {
-						"type": "git",
-						"tag-pattern": "^([\\d]+)$"
-					}
-				}
-			]
-		}
-	]
+    "id": "space.nouspiro.tenmon",
+    "runtime": "org.kde.Platform",
+    "runtime-version": "6.9",
+    "sdk": "org.kde.Sdk",
+    "command": "tenmon",
+    "cleanup": [
+        "/include",
+        "*.a",
+        "*.la",
+        "*.cmake"
+    ],
+    "finish-args": [
+        "--share=ipc",
+        "--share=network",
+        "--socket=fallback-x11",
+        "--socket=wayland",
+        "--device=dri",
+        "--filesystem=host:rw",
+        "--filesystem=xdg-run/gvfs:ro",
+        "--talk-name=org.freedesktop.FileManager1"
+    ],
+    "modules": [
+        {
+            "name": "libgsl",
+            "buildsystem": "autotools",
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://quantum-mirror.hu/mirrors/pub/gnu/gsl/gsl-2.8.tar.gz",
+                    "sha256": "6a99eeed15632c6354895b1dd542ed5a855c0f15d9ad1326c6fe2b2c9e423190",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1267,
+                        "url-template": "https://quantum-mirror.hu/mirrors/pub/gnu/gsl/gsl-$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cfitsio",
+            "buildsystem": "cmake-ninja",
+            "builddir": true,
+            "cleanup": [
+                "/bin"
+            ],
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DUSE_PTHREADS=ON"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "disable-http-decompression": true,
+                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.3.tar.gz",
+                    "sha256": "fad44fff274fdda5ffcc0c0fff3bc3c596362722b9292fc8944db91187813600",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 270,
+                        "url-template": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "libraw",
+            "buildsystem": "autotools",
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.libraw.org/data/LibRaw-0.21.4.tar.gz",
+                    "sha256": "6be43f19397e43214ff56aab056bf3ff4925ca14012ce5a1538a172406a09e63",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1709,
+                        "url-template": "https://www.libraw.org/data/LibRaw-$version.tar.gz"
+                    }
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "autoreconf -f -i"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "wcs",
+            "buildsystem": "autotools",
+            "cleanup": [
+                "/bin"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-8.4.tar.bz2",
+                    "sha256": "960b844426d14a8b53cdeed78258aa9288cded99a7732c0667c64fa6a50126dc",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 7693,
+                        "url-template": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-$version.tar.bz2"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "stellarsolver",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DUSE_QT5=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/rlancaste/stellarsolver.git",
+                    "tag": "2.7",
+                    "commit": "5902126c7a0ac01877c29f1189bda23f0837cf58",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "tenmon",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DCMAKE_BUILD_TYPE=Release",
+                "-DRELEASE_BUILD=ON",
+                "-DFLATPAK=ON",
+                "-DUSE_BUNDLED_LIBS=ON",
+                "-DUSE_BUNDLED_ZLIB=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitea.nouspiro.space/nou/tenmon.git",
+                    "tag": "20251101",
+                    "commit": "9e7913346423f838e75e6b6d9e0e8a5eb9f65c5b",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d]+)$"
+                    }
+                }
+            ]
+        }
+    ]
 }
