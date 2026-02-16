@@ -74,8 +74,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libraw.org/data/LibRaw-0.21.5.tar.gz",
-                    "sha256": "20ecfa6aad943d383ab3f66d303727ef542b042cbba2bb7ddaeff0bb2e9ff916",
+                    "url": "https://www.libraw.org/data/LibRaw-0.22.0.tar.gz",
+                    "sha256": "1071e6e8011593c366ffdadc3d3513f57c90202d526e133174945ec1dd53f2a1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1709,
@@ -143,8 +143,8 @@
                 {
                     "type": "git",
                     "url": "https://gitea.nouspiro.space/nou/tenmon.git",
-                    "tag": "20251101",
-                    "commit": "9e7913346423f838e75e6b6d9e0e8a5eb9f65c5b",
+                    "tag": "20260217",
+                    "commit": "1ac5a4e42a7d8fa58dab5d272201aca6f8ac6a00",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d]+)$"
