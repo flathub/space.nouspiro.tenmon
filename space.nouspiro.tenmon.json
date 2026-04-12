@@ -6,9 +6,13 @@
     "command": "tenmon",
     "cleanup": [
         "/include",
-        "*.a",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/share/aclocal",
+        "/share/doc",
+        "/share/man",
         "*.la",
-        "*.cmake"
+        "*.a"
     ],
     "finish-args": [
         "--share=ipc",
