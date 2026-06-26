@@ -6,9 +6,13 @@
     "command": "tenmon",
     "cleanup": [
         "/include",
-        "*.a",
+        "/lib/cmake",
+        "/lib/pkgconfig",
+        "/share/aclocal",
+        "/share/doc",
+        "/share/man",
         "*.la",
-        "*.cmake"
+        "*.a"
     ],
     "finish-args": [
         "--share=ipc",
@@ -55,8 +59,8 @@
                 {
                     "type": "archive",
                     "disable-http-decompression": true,
-                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.3.tar.gz",
-                    "sha256": "fad44fff274fdda5ffcc0c0fff3bc3c596362722b9292fc8944db91187813600",
+                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.4.tar.gz",
+                    "sha256": "227b637b91c9820ea96f39a65eb087f053de567d82f4338e2884f123f8183c55",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 270,
@@ -120,8 +124,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/rlancaste/stellarsolver.git",
-                    "tag": "2.7",
-                    "commit": "5902126c7a0ac01877c29f1189bda23f0837cf58",
+                    "tag": "2.8",
+                    "commit": "89377481934f40e7a84a8f91f667e37125e47ae0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -143,8 +147,8 @@
                 {
                     "type": "git",
                     "url": "https://gitea.nouspiro.space/nou/tenmon.git",
-                    "tag": "20260412",
-                    "commit": "974d482d5b227da61d5239424187dc49a3bc8e31",
+                    "tag": "20260626",
+                    "commit": "74c97d9f8d5f0e10ccd42e9c684120dfce9509bb",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d]+)$"
