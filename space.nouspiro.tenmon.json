@@ -59,8 +59,8 @@
                 {
                     "type": "archive",
                     "disable-http-decompression": true,
-                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.6.4.tar.gz",
-                    "sha256": "227b637b91c9820ea96f39a65eb087f053de567d82f4338e2884f123f8183c55",
+                    "url": "https://heasarc.gsfc.nasa.gov/FTP/software/fitsio/c/cfitsio-4.7.0.tar.gz",
+                    "sha256": "ce573bbea8e75b429f8c3d3e86498741ba3dc9628a1530d2f65268397ad059e8",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 270,
@@ -147,8 +147,8 @@
                 {
                     "type": "git",
                     "url": "https://gitea.nouspiro.space/nou/tenmon.git",
-                    "tag": "20260626",
-                    "commit": "74c97d9f8d5f0e10ccd42e9c684120dfce9509bb",
+                    "tag": "20260826",
+                    "commit": "1506cbeb9f9fc1f73c8b4dc6883e16981cdf6df3",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d]+)$"
