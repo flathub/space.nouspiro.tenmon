@@ -147,8 +147,8 @@
                 {
                     "type": "git",
                     "url": "https://gitea.nouspiro.space/nou/tenmon.git",
-                    "tag": "20260826",
-                    "commit": "1506cbeb9f9fc1f73c8b4dc6883e16981cdf6df3",
+                    "tag": "20260913",
+                    "commit": "6d30851920869a7d4bfbaa11aa59f1434b47ada9",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d]+)$"
