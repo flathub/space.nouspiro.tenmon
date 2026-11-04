@@ -108,7 +108,7 @@
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 7693,
-                        "url-template": "https://www.atnf.csiro.au/people/mcalabre/WCS/wcslib-$version.tar.bz2"
+                        "url-template": "https://www.atnf.csiro.au/computing/software/wcs/wcslib-releases/wcslib-$version.tar.bz2"
                     }
                 }
             ]
